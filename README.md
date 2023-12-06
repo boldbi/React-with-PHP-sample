@@ -4,7 +4,7 @@ This project was created using React with PHP. This application aims to demonstr
 
 ## Dashboard view
 
-  ![Dashboard view](https://github.com/boldbi/angular-with-php-sample/assets/129487075/b5b74a98-8fdc-42bc-8bd2-89404898a414)
+  ![Dashboard view](https://github.com/boldbi/react-with-php-sample/assets/129487075/835680e5-e68e-4b92-9798-b0c73db9ceea)
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ The samples require the following requirements to run.
 
   * Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-php-sample/tree/master/PHP) within the application. Please ensure you have placed it in the application, as shown in the following image.
     
-    ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/95e8e272-53e8-449a-8a46-592cf8646d7c)
+    ![EmbedConfig image](https://github.com/boldbi/react-with-php-sample/assets/129487075/85594896-b64e-4df7-b6d1-d9e7f9803da5)
 
 ## Run a PHP Sample
  
@@ -84,7 +84,7 @@ The samples require the following requirements to run.
 
  * After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., https://localhost:3000). 
 
-    ![dashboard view](https://github.com/boldbi/angular-with-php-sample/assets/129487075/a5d4781a-9b0f-43c0-800f-b03a294729cc)
+    ![dashboard view](https://github.com/boldbi/react-with-php-sample/assets/129487075/bedeecab-f4ce-4cb8-a2e3-6cf8fb6b59be)
 
 > **NOTE:** If the API host is already in use, modify the port number according to your preference and update it in the Dashboard.js file.
 
