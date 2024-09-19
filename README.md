@@ -27,7 +27,7 @@ The samples require the following requirements to run.
 | **Parameter** | **Description**                                                                                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **UserEmail** | UserEmail of the Admin in your Bold BI, which will be used to get the dashboards.                                                                                             |
-| **secretCode** | Get your EmbedSecret key from the Embed tab by enabling the `Enable embed authentication` in the [administration page](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/). |
+| **secretCode** | Get your EmbedSecret key from the Embed tab by enabling the `Enable embed authentication` in the [administration page](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/?utm_source=github&utm_medium=backlinks). |
 
 * Now, run the PHP sample.
 
@@ -69,8 +69,8 @@ npm start
 
 ## Online Demos
 
-Look at the Bold BI Embedding sample to live demo [here](https://samples.boldbi.com/embed).
+Look at the Bold BI Embedding sample to live demo [here](https://samples.boldbi.com/embed?utm_source=github&utm_medium=backlinks).
 
 ## Documentation
 
-A complete Bold BI Embedding documentation can be found on [Bold BI Embedding Help](https://help.boldbi.com/embedded-bi/javascript-based/).
+A complete Bold BI Embedding documentation can be found on [Bold BI Embedding Help](https://help.boldbi.com/embedded-bi/javascript-based/?utm_source=github&utm_medium=backlinks).
