@@ -1,76 +1,97 @@
 # BoldBI Embedding React with PHP Sample
 
- This Bold BI React with PHP sample contains the dashboard embedding samples.In this sample, `React` application act as the front-end, and `PHP` acts as the back-end application. This sample demonstrates the rendering of dashboard available in your Bold BI server.
+This project was created using React with PHP. This application aims to demonstrate how to render the dashboard available on your Bold BI server.
 
-This section guides you in using the Bold BI dashboard in your React with PHP sample application.
+## Dashboard view
 
-* [Requirements to run the demo](#requirements-to-run-the-demo)
-* [Using the React with PHP sample](#using-the-react-with-php-sample)
-* [Online Demos](#online-demos)
-* [Documentation](#documentation)
+  ![Dashboard view](https://github.com/boldbi/angular-with-php-sample/assets/129487075/b5b74a98-8fdc-42bc-8bd2-89404898a414)
 
-## Requirements to run the demo
+## Prerequisites
 
 The samples require the following requirements to run.
 
-* [PHP installer](https://windows.php.net/download/)
-* [Node.js](https://nodejs.org/en/)
-* [Visual Studio Code](https://code.visualstudio.com/download)
-* In Visual studio code download the extensions, PHP intelephense and PHP Server.
+ * [PHP](https://windows.php.net/download/)
+ * [Node.js](https://nodejs.org/en/)
+ * [Visual Studio Code](https://code.visualstudio.com/download)
+ 
+ > **NOTE:** Node.js versions 14.16 to 18.18 are supported.
 
-## Using the React with PHP sample
+ #### Supported browsers
+  
+  * Google Chrome, Microsoft Edge, and Mozilla Firefox.
 
-* Open the PHP sample in visual studio code or any respective IDE.
+ ## Configuration
 
-* Open the `authorizeserver.php` in the location, /PHP/rest/authorizeserver.php and provide the mandatory values as per your Bold BI Server.
+  * Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+  
+    ![Embed Settings](https://github.com/boldbi/aspnet-core-sample/assets/91586758/b3a81978-9eb4-42b2-92bb-d1e2735ab007)
 
-| **Parameter** | **Description**                                                                                                                                                                |
-|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **UserEmail** | UserEmail of the Admin in your Bold BI, which will be used to get the dashboards.                                                                                             |
-| **secretCode** | Get your EmbedSecret key from the Embed tab by enabling the `Enable embed authentication` in the [administration page](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/?utm_source=github&utm_medium=backlinks). |
+  * To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
 
-* Now, run the PHP sample.
+    ![Embed Settings Download](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d27d4cfc-6a3e-4c34-975e-f5f22dea6172)
 
-* Open the React sample in Visual studio code.
+    ![EmbedConfig Properties](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d6ce925a-0d4c-45d2-817e-24d6d59e0d63)
 
-* Open the `DashboardListing.js` file in the following location, /src/DashboardListing/DashboardListing.js.
+  * Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-php-sample/tree/master/PHP) within the application. Please ensure you have placed it in the application, as shown in the following image.
+    
+    ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/95e8e272-53e8-449a-8a46-592cf8646d7c)
 
-* Please change the following properties in the `DashboardListing.js` file as per your Bold BI Server.
+## Run a PHP Sample
+ 
+ * Open the PHP sample in visual studio code or any respective IDE.
+ 
+ * Ensure whether embedConfig file is located in following location, `PHP/embedConfig.json` and run the PHP application using the respective IDE or using visual studio code.
 
-| **Parameter**      | **Description**                                                                                                                                                   |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **apiHost**        | PHP application would be run on `http://localhost:3000/`, which needs to be set as `apiHost`.                                                                      |
-| **RootUrl**        | Dashboard Server URL (e.g., `http://localhost:5000/bi`, `http://demo.boldbi.com/bi`).                                                                            |
-| **SiteIdentifier** | For the Bold BI Enterprise edition, it should be like `site/site1`. For Bold BI Cloud, it should be an empty string.                                                |
-| **Environment**    | Your Bold BI application environment. (If Cloud, you should use `cloud,` if Enterprise, you should use `enterprise`).                                                                      |
-| **authorizationUrl** | URL of the 'GetDetails' action in the PHP application.                                                                                                                |
-| **dashboardId**    | Dashboard Id of the dashboard you want to embed.                                                                                                                     |
+## Run a Sample Using Command Line Interface 
+    
+  * Open the command line interface and navigate to the specified file [location](https://github.com/boldbi/react-with-php-sample/PHP) where the project is located.
 
-* Now run the React sample.
+  * Run the back-end `PHP` sample using the following command `php -S localhost:8080`.
+  
+  * Open the command line interface and navigate to the specified file [location](https://github.com/boldbi/react-with-php-sample/React) where the project is located.
+   
+  * To install all dependent packages, use the following command `npm install`.
+ 
+  * Finally, run the application using the following command `npm start`.  After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., https://localhost:3000).
 
-### Install npm
+## Developer IDE
 
-To install all dependent packages, use the below command
+  * [Visual Studio Code](https://code.visualstudio.com/download)
 
-```bash
-npm install
-```
+## Run a Sample Using Visual Studio Code
+ 
+ * Open the PHP sample in **Visual Studio Code**.
+ 
+ * Run the PHP sample, use the below command
 
-### Run/Serve
+    ```bash
+      php -S localhost:8080
+    ```
 
-To run the sample, use the below command
+ * Open the React sample in **Visual Studio Code**.
 
-```bash
-npm start
-```
+ * Install all dependent packages, use the below command
 
-<!-- Commanded the below line, since help documentation is not available for this sample. Once crated need to update the hyperlink -->
-<!-- Please refer to the [help documentation]() to know how to run the sample. -->
+    ```bash
+      npm install
+    ```
+
+ * Run the React sample, use the below command
+
+    ```bash
+      npm start
+    ```
+
+ * After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., https://localhost:3000). 
+
+    ![dashboard view](https://github.com/boldbi/angular-with-php-sample/assets/129487075/a5d4781a-9b0f-43c0-800f-b03a294729cc)
+
+> **NOTE:** If the API host is already in use, modify the port number according to your preference and update it in the Dashboard.js file.
 
 ## Online Demos
 
-Look at the Bold BI Embedding sample to live demo [here](https://samples.boldbi.com/embed?utm_source=github&utm_medium=backlinks).
+Look at the Bold BI Embedding sample to live demo [here](https://samples.boldbi.com/embed).
 
 ## Documentation
 
-A complete Bold BI Embedding documentation can be found on [Bold BI Embedding Help](https://help.boldbi.com/embedded-bi/javascript-based/?utm_source=github&utm_medium=backlinks).
+A complete Bold BI Embedding documentation can be found on [Bold BI Embedding Help](https://help.boldbi.com/embedded-bi/javascript-based/).
