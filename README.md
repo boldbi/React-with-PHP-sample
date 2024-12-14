@@ -14,7 +14,7 @@ The samples require the following requirements to run.
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
  
- > **NOTE:** Node.js versions 14.16 to 18.18 are supported.
+ > **NOTE:** Node.js versions 18.17 to 20.14 are supported.
 
  #### Supported browsers
   
